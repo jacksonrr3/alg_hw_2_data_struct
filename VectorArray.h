@@ -5,11 +5,10 @@
 template <typename T>
 class VectorArray :	public IArray<T>
 {
-	T* _array;			 ///ìàññèâ ñ äàííûìè òèïà Ò
-	size_t _size;		 ///ðàçìåð äàííûõ, çðàíèïìûõ â ñòðóêòóðå
-	const size_t _vec=100;   ///øàã óâåëè÷åíèÿ ïàìÿòè
-	size_t _alloc;		 ///ðàçìåð àëëîöèðîâàííîãî ïðîñòàíñòâà ïàìÿòè, óâåëè÷èâàåòñÿ íà ðàçìåð _vec
-
+	T* _array;			
+	size_t _size;		 
+	const size_t _vec=100;   
+	size_t _alloc;		 
 public:
 	VectorArray() {
 		_size = 0;
